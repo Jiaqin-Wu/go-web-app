@@ -11,7 +11,7 @@ var Conf = new(AppConfig)
 
 type AppConfig struct {
 	Name         string `mapstructure:"name"`
-	Mod          string `mapstructure:"mod"`
+	Mode         string `mapstructure:"mode"`
 	Port         int    `mapstructure:"port"`
 	Version      string `mapstructure:"version"`
 	*LogConfig   `mapstructure:"log"`
