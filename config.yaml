@@ -1,7 +1,7 @@
-app:
-  name: "go_web_app"
-  mod: "dev"
-  port: 8081
+name: "go_web_app"
+mod: "dev"
+port: 8081
+version: "v0.0.1"
 log:
   level: "debug"
   filename: "go_web_app.log"
