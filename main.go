@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"go_web_app/logger"
 	"go_web_app/settings"
 )
 
@@ -12,6 +13,10 @@ func main() {
 		return
 	}
 	// 2.初始化日志
+	if err := logger.Init(settings.Conf.LogConfig); err != nil {
+		fmt.Printf("init logger faild, err:%v\n", err)
+		return
+	}
 	// 3.初始化Mysql连接
 	// 4.初始化Redis连接
 	// 5.注册路由
