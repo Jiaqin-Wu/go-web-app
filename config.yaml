@@ -2,6 +2,8 @@ name: "go_web_app"
 mode: "dev"
 port: 8081
 version: "v0.0.1"
+start_time: "2024-01-21"
+machine_id: 1
 log:
   level: "debug"
   filename: "go_web_app.log"
